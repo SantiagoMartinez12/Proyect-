@@ -1,0 +1,16 @@
+body{
+    display:flex
+}
+.container {
+    display: grid; 
+    grid-template-columns: 1.4fr 0.6fr; 
+    grid-template-rows: 0.4fr 2.3fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "logo ."
+      "seleccion creacion"; 
+  }
+  .logo { grid-area: logo; }
+  .seleccion { grid-area: seleccion; }
+  .creacion { grid-area: creacion; }
+  .cerveza{ border:solid 1px; padding:20px;margin-right:400px; margin-top:200px}
