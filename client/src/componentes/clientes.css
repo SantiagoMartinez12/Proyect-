@@ -1,0 +1,38 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.6fr 1.2fr 1.3fr 0.9fr;
+  grid-template-rows: 0.4fr 1.6fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Logo Cervezas Cervezas Precio"
+    "Detalle Detalle Detalle Detalle"
+    "Filtros Filtros Filtros Filtros";
+}
+.Logo {
+  grid-area: Logo;
+}
+.Cervezas {
+  grid-area: Cervezas;
+}
+.Precio {
+  grid-area: Precio;
+}
+.Detalle {
+  grid-area: Detalle;
+}
+.Filtros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Filtrar Filtrar"
+    "Buscar Buscar";
+  grid-area: Filtros;
+}
+.Filtrar {
+  grid-area: Filtrar;
+}
+.Buscar {
+  grid-area: Buscar;
+}
